@@ -1,0 +1,38 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - "*"
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Build SQLite
+        run: uv run python scripts/build_sqlite_from_data.py --data-dir data --out-db db.sqlite
+
+      - name: Build MDX
+        run: uv run --with mdict-utils python scripts/build_mdx_from_data.py --data-dir data --out-mdx open-english-dictionary.mdx
+
+      - name: Publish Release Assets
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            db.sqlite
+            open-english-dictionary.mdx
+          generate_release_notes: true
