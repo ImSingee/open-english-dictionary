@@ -4,6 +4,8 @@
 
 该仓库存储的是数据集的原始文件（`NDJSON` 分片），如需直接使用数据库、MDict（mdx）等格式，请访问 [Releases](https://github.com/ImSingee/open-english-dictionary/releases) 页面。
 
+预览：https://open-english-dictionary.auv.tools/
+
 ## 当前数据规模
 
 目前数据集中包括约 26w 单词及 2.5w 短语。
