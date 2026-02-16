@@ -1,8 +1,8 @@
 # Open English Dictionary
 
-一个开源的英-中词典数据集。
+一个开源的英英+英汉词典数据集。
 
-该仓库存储的是数据集的原始文件（`NDJSON` 分片），如需直接使用数据库、mdx 等格式，请访问 [Releases](https://github.com/ImSingee/open-english-dictionary/releases) 页面。
+该仓库存储的是数据集的原始文件（`NDJSON` 分片），如需直接使用数据库、MDict（mdx）等格式，请访问 [Releases](https://github.com/ImSingee/open-english-dictionary/releases) 页面。
 
 ## 当前数据规模
 
@@ -14,7 +14,7 @@
 
 1. 持续更新 —— 该 AI 词典会持续更新，快速将新词纳入数据集
 2. 更高质量的数据 —— 所有词条均使用最新 SOTA AI 模型生成
-3. 结构化的数据 —— 所有词条均使用结构化数据格式存储，可以轻松被程序解析应用于各类场景；同时提供了 sqlite 数据库和 mdx 词典格式，方便各类工具和应用开箱即用
+3. 结构化的数据 —— 所有词条均使用结构化数据格式存储，可以轻松被程序解析应用于各类场景；同时提供了 sqlite 数据库和 MDict（mdx）词典格式，方便各类工具和应用开箱即用
 
 ## 人工反馈
 
