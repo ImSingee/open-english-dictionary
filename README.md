@@ -6,6 +6,10 @@
 
 预览：https://open-english-dictionary.auv.tools/
 
+## 使用方式
+
+[Release](https://github.com/ImSingee/open-english-dictionary/releases) 页面提供了适用于程序使用的 SQLite 数据库和适用于导入词典的 MDict 文件。
+
 ## 当前数据规模
 
 目前数据集中包括约 41.1w 单词及 7.3w 词组。
